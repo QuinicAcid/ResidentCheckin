@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ResidentCheckin</string>
+    <string name="resident_check_in">RESIDENT CHECK IN</string>
+    <string name="enter_last_name_below">ENTER LAST NAME BELOW</string>
+    <string name="search">SEARCH</string>
+    <string name="clear">CLEAR</string>
+    <string name="title_activity_verify">VerifyActivity</string>
+    <string name="next">NEXT</string>
 </resources>

@@ -8,4 +8,14 @@
     <string name="next">NEXT</string>
     <string name="verify_status">VERIFY STATUS</string>
     <string name="button">Button</string>
+    <string name="verify_status">VERIFY STATUS</string>
+    <string name="status">STATUS</string>
+    <string name="current">Current</string>
+    <string name="back">BACK</string>
+    <string name="next">NEXT</string>
+    <string name="status">STATUS</string>
+    <string name="bed">BED</string>
+    <string name="locker">LOCKER</string>
+    <string name="back">BACK</string>
+    <string name="check_in">CHECK IN</string>
 </resources>

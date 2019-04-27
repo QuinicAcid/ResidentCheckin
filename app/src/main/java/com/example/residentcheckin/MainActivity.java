@@ -23,16 +23,27 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        edtTxt = (EditText) findViewById(R.id.editText);
-        txt = (TextView) findViewById(R.id.txtResults);
-        btn = (Button) findViewById(R.id.btnSearch);
-
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
+        Button button = (Button) findViewById(R.id.btnSearch);
+        Button button2;
+        button2 = (Button) findViewById(R.id.btnNext);
+        button.setOnClickListener (new View.OnClickListener() {
             public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),VerifyStatus.class);
+                startActivity(i);
+
+                setContentView(R.layout.activity_main);
+            }
+        });
+        button2.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Intent myintent2 = new Intent(MainActivity.this,Button.class);
+                startActivity(myintent2);
 
             }
-
         });
+
+
     }
+
 }

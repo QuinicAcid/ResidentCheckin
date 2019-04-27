@@ -6,4 +6,6 @@
     <string name="clear">CLEAR</string>
     <string name="title_activity_verify">VerifyActivity</string>
     <string name="next">NEXT</string>
+    <string name="verify_status">VERIFY STATUS</string>
+    <string name="button">Button</string>
 </resources>

@@ -44,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewResChk" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -69,10 +69,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText1" />
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <TextView
-        android:id="@+id/textViewSearchReults"
+        android:id="@+id/txtResults"
         android:layout_width="290dp"
         android:layout_height="127dp"
         android:layout_marginStart="8dp"
@@ -97,6 +97,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewSearchReults" />
+        app:layout_constraintTop_toBottomOf="@+id/txtResults" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

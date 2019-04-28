@@ -14,40 +14,26 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
-
-
-
         private Button btnNext;
-
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
-            Button button = (Button) findViewById(R.id.btnSearch);
-            Button button2;
-            button2 = (Button) findViewById(R.id.btnNext);
-            button.setOnClickListener (new View.OnClickListener() {
-                public void onClick(View v) {
-                    Intent i = new Intent(getApplicationContext(),VerifyStatus.class);
-                    startActivity(i);
+            Button btnSearch = (Button) findViewById(R.id.btnSearch);
+            Button btnNext = (Button) findViewById(R.id.btnNext);
 
-                    setContentView(R.layout.activity_main);
-                }
-            });
-            button2.setOnClickListener(new View.OnClickListener() {
 
+            btnNext.setOnClickListener(new View.OnClickListener() {
+                @Override
                 public void onClick(View v) {
-                    Intent myintent2 = new Intent(MainActivity.this,Button.class);
-                    startActivity(myintent2);
 
                 }
             });
 
-
         }
 
-        public void onClick(View v) {
-            Intent myIntent = new Intent(getBaseContext(),   VerifyStatus.class);
-            startActivity(myIntent);
-        }
+    public void onClick(View v) {
+        Intent myIntent = new Intent(getBaseContext(), VerifyStatus.class);
+        startActivity(myIntent);
     }
+}

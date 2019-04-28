@@ -13,4 +13,5 @@
     <string name="bed">BED</string>
     <string name="locker">LOCKER</string>
     <string name="check_in">CHECK IN</string>
+    <string name="next">Next</string>
 </resources>

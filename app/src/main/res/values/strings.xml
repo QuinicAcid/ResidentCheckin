@@ -15,4 +15,6 @@
     <string name="check_in">CHECK IN</string>
     <string name="next">Next</string>
     <string name="current_status">Current Status</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
 </resources>

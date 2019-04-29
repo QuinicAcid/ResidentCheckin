@@ -11,9 +11,9 @@
         android:id="@+id/textViewCurrentStatus"
         android:layout_width="259dp"
         android:layout_height="34dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:text="@string/current_status"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
@@ -28,11 +28,11 @@
         android:id="@+id/textViewResults"
         android:layout_width="320dp"
         android:layout_height="216dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewCurrentStatus" />
 
@@ -64,4 +64,21 @@
         app:layout_constraintStart_toEndOf="@+id/btnBack"
         app:layout_constraintTop_toBottomOf="@+id/textViewResults"
         app:layout_constraintVertical_bias="0.224" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="289dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/background_light"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewCurrentStatus" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,6 +14,7 @@ public class Status extends AppCompatActivity {
         setContentView(R.layout.activity_status);
 
         Button back = (Button) findViewById(R.id.btnBack);
+        Button locker = (Button) findViewById(R.id.btnLocker);
 
         back.setOnClickListener(new View.OnClickListener() {
 
@@ -24,5 +25,12 @@ public class Status extends AppCompatActivity {
             }
 
         });
+        locker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0){}
+
+
+        });
+
     }
-    }
+}

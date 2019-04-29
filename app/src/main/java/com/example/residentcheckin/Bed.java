@@ -1,6 +1,8 @@
 package com.example.residentcheckin;
 
-public class Bed {
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class Bed  {
 
     private int bedID;              //NOT null
 

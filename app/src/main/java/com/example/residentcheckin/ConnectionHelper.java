@@ -37,15 +37,15 @@ public class ConnectionHelper {
         }
         catch (SQLException se)
         {
-            Log.e("error here 1 : ", se.getMessage());
+            Log.e("MDC SQL Error : ", se.getMessage());
         }
         catch (ClassNotFoundException e)
         {
-            Log.e("error here 2 : ", e.getMessage());
+            Log.e("MDC CLASS Error : ", e.getMessage());
         }
         catch (Exception e)
         {
-            Log.e("error here 3 : ", e.getMessage());
+            Log.e("MDC EXCEPTION Error : ", e.getMessage());
         }
         return connection;
     }

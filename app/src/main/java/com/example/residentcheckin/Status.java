@@ -40,25 +40,6 @@ public class Status extends AppCompatActivity {
 
         });
 
-        Button back = (Button) findViewById(R.id.btnBack);
-        Button locker = (Button) findViewById(R.id.btnLocker);
-
-        back.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View arg0) {
-
-                finish();
-            }
-
-        });
-        locker.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0){}
-
-
-        });
-
     }
 
     private class MyTask extends AsyncTask<Void, Void, Void>{

@@ -1,6 +1,4 @@
 package com.example.residentcheckin;
 
-public class ConnectionClass {
-
-
+public class ConnectionHelper {
 }

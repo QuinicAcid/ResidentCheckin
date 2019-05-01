@@ -1,20 +1,15 @@
 package com.example.residentcheckin;
 
-import android.Manifest;
 import android.content.Intent;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.TextView;
-
-import android.os.Bundle;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Resident res = new Resident(116);
 
         //create object of listview
         listView=(ListView)findViewById(R.id.listview);
@@ -33,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<String> arrayList=new ArrayList<>();
 
         //Add elements to arraylist
+        arrayList.add("First Name = " + res.getFirstName());
         arrayList.add("Resident01");
         arrayList.add("Resident02");
         arrayList.add("Resident03");
@@ -65,7 +62,22 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(MainActivity.this,"clicked item:"+i+" "+arrayList.get(i).toString(),Toast.LENGTH_SHORT).show();
+
+            Toast.makeText(MainActivity.this,"clicked item:"+i+" "+arrayList.get(i).toString(),Toast.LENGTH_SHORT).show();
+
+
+
+
+
+
+
+//                Toast.makeText(MainActivity.this,"clicked item:"+i+" "+arrayList.get(i).toString(),Toast.LENGTH_SHORT).show();
+//
+//                // create a Statement from the connection
+//                Statement statement = conn.createStatement();
+//
+//                // insert the data
+//                statement.executeUpdate("INSERT INTO Customers " + "VALUES (1001, 'Simpson', 'Mr.', 'Springfield', 2001)");
             }
         });
     }
@@ -79,4 +91,27 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+
+
 }
+
+//class JdbcTest1
+//{
+//    public static void main (String[] args)
+//    {
+//        try
+//        {
+//            // Step 1: Load the JDBC ODBC driver
+//            Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+//
+//            // Step 2: Establish the connection to the database
+//            String url = "jdbc:odbc:contact_mgr";
+//            Connection conn = DriverManager.getConnection(url,"user1","password");
+//        }
+//        catch (Exception e)
+//        {
+//            System.err.println("Got an exception! ");
+//            System.err.println(e.getMessage());
+//        }
+//    }
+//}

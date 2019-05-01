@@ -52,12 +52,13 @@ public class Status extends AppCompatActivity {
                 Connection con = DriverManager.getConnection(url, user, pass);
 
                 Statement st = con.createStatement();
+
                 String sql = "SELECT * FROM Resident WHERE Resident_ID = 17";
 
                 final ResultSet rs = st.executeQuery(sql);
                 rs.next();
-                lName = rs.getString(2);
-                fName = rs.getString(3);
+                lName = rs.getString("Last_Name");
+                fName = rs.getString("First_Name");
             }
             catch (Exception e) {
                 e.printStackTrace();
